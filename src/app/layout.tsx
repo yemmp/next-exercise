@@ -1,6 +1,18 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
+import { Card } from "@/components/ui/card";
+import { Button } from "@/components/ui/button";
+import {
+  Home,
+  LineChart,
+  Package,
+  Package2,
+  Settings,
+  ShoppingCart,
+  UsersRound,
+} from "lucide-react";
+import Sidemenu from "@/components/Sidemenu";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -15,8 +27,17 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body className={inter.className}>{children}</body>
+    <html lang="en" className="dark">
+      <body className={inter.className}>
+        <main className="flex h-screen bg-zinc-800 fixed w-screen  ">
+          {/*Side-menu*/}
+          <div>
+            <Sidemenu />
+          </div>
+          {/*Page-content*/}
+          <div className="overflow-auto mx-2 w-full">{children}</div>
+        </main>
+      </body>
     </html>
   );
 }
