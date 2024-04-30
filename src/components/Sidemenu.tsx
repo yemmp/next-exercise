@@ -9,13 +9,16 @@ import {
 } from "lucide-react";
 import { Button } from "./ui/button";
 import { Card } from "./ui/card";
+import Link from "next/link";
 
 export default function Sidemenu() {
   return (
     <Card className="flex flex-col justify-between w-16 p-2  h-full">
       <div className="flex flex-col self-center gap-1 pt-2">
         <Button size={"icon"} className="self-center rounded-full">
-          <Package2 />
+          <Link href="/">
+            <Package2 />
+          </Link>
         </Button>
 
         <Button
@@ -23,14 +26,18 @@ export default function Sidemenu() {
           variant="ghost"
           className="self-center rounded-lg"
         >
-          <Home />
+          <Link href="/">
+            <Home />
+          </Link>
         </Button>
 
         <Button
           size={"icon"}
           className="self-center rounded-lg active: bg-zinc-600"
         >
-          <ShoppingCart color="white" />
+          <Link href="/Products">
+            <ShoppingCart color="white" />
+          </Link>
         </Button>
 
         <Button
@@ -38,7 +45,9 @@ export default function Sidemenu() {
           variant="ghost"
           className="self-center rounded-lg"
         >
-          <Package />
+          <Link href="/Orders">
+            <Package />
+          </Link>
         </Button>
 
         <Button
@@ -46,7 +55,9 @@ export default function Sidemenu() {
           variant="ghost"
           className="self-center rounded-lg"
         >
-          <UsersRound />
+          <Link href="/Users">
+            <UsersRound />
+          </Link>
         </Button>
 
         <Button
@@ -54,7 +65,9 @@ export default function Sidemenu() {
           variant="ghost"
           className="self-center rounded-lg"
         >
-          <LineChart />
+          <Link href="Analytics">
+            <LineChart />
+          </Link>
         </Button>
       </div>
 

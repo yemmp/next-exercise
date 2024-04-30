@@ -1,13 +1,13 @@
 import PageMark from "@/components/PageMark";
 
-export default function Home() {
+export default function Analitycs() {
   return (
     <main className="">
       <div>
-        <PageMark pages={["Home"]} />
+        <PageMark pages={["Analitycs"]} />
       </div>
       <div>
-        <h1 className="text-9xl">HOME PAGE</h1>
+        <h1 className="text-9xl">Analitycs PAGE</h1>
       </div>
     </main>
   );

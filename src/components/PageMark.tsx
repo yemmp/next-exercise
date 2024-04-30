@@ -8,31 +8,23 @@ import {
   BreadcrumbSeparator,
 } from "./ui/breadcrumb";
 
-export default function PageMark() {
+export default function PageMark({ pages }) {
   return (
     <section className="p-4">
       <Breadcrumb className="text-zinc-400">
         <BreadcrumbList>
-          <BreadcrumbItem>
-            <BreadcrumbLink>Dashboard</BreadcrumbLink>
-          </BreadcrumbItem>
-
-          <BreadcrumbSeparator>
-            <ChevronRight />
-          </BreadcrumbSeparator>
-
-          <BreadcrumbItem>
-            <BreadcrumbLink>Orders</BreadcrumbLink>
-          </BreadcrumbItem>
-
-          <BreadcrumbSeparator>
-            <ChevronRight />
-          </BreadcrumbSeparator>
-          <BreadcrumbItem>
-            <BreadcrumbLink className="text-white">
-              Recent Orders
-            </BreadcrumbLink>
-          </BreadcrumbItem>
+          {pages.map((page) => (
+            <>
+              <BreadcrumbItem key={page}>
+                <BreadcrumbLink href={`${page === "Home" ? "/" : `/${page}`}`}>
+                  {page}
+                </BreadcrumbLink>
+              </BreadcrumbItem>
+              <BreadcrumbSeparator>
+                <ChevronRight />
+              </BreadcrumbSeparator>
+            </>
+          ))}
         </BreadcrumbList>
       </Breadcrumb>
     </section>
