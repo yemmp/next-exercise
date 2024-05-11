@@ -1,6 +1,6 @@
-import { Progress } from "./ui/progress";
+import { Progress } from "../ui/progress";
 import React from "react";
-import { Card, CardHeader, CardContent, CardFooter } from "./ui/card";
+import { Card, CardHeader, CardContent, CardFooter } from "../ui/card";
 
 export default function ThisWeek() {
   return (

@@ -6,7 +6,7 @@ import {
   ChevronRight,
 } from "lucide-react";
 import React from "react";
-import { Button } from "./ui/button";
+import { Button } from "../ui/button";
 import {
   Card,
   CardHeader,
@@ -14,7 +14,7 @@ import {
   CardDescription,
   CardContent,
   CardFooter,
-} from "./ui/card";
+} from "../ui/card";
 
 export default function Order() {
   return (

@@ -1,6 +1,6 @@
-import OrderPage from "@/components/OrderPage";
+import OrderPage from "@/components/Order/OrderPage";
 
-export default function Orders() {
+export default function OrdersPage() {
   return (
     <main>
       <OrderPage />

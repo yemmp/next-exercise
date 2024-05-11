@@ -6,7 +6,7 @@ import {
   TableHead,
   TableBody,
   TableCell,
-} from "./ui/table";
+} from "../ui/table";
 
 export default function OrderTable() {
   return (

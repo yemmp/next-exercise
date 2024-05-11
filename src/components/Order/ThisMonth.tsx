@@ -1,6 +1,6 @@
 import React from "react";
-import { Card, CardContent, CardFooter, CardHeader } from "./ui/card";
-import { Progress } from "./ui/progress";
+import { Card, CardContent, CardFooter, CardHeader } from "../ui/card";
+import { Progress } from "../ui/progress";
 
 export default function ThisMonth() {
   return (

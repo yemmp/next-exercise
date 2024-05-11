@@ -1,5 +1,5 @@
-import PageMark from "./PageMark";
-import Searchbar from "./Searchbar";
+import PageMark from "../PageMark";
+import Searchbar from "../Searchbar";
 import YourOrders from "./YourOrders";
 import ThisWeek from "./ThisWeek";
 import ThisMonth from "./ThisMonth";
@@ -11,9 +11,8 @@ const pages = ["Home", "Orders"];
 export default function OrderPage() {
   return (
     <article className="">
-      <div className="flex  justify-between w-full h-1/4 pt-3  ">
+      <div>
         <PageMark pages={pages} />
-        <Searchbar />
       </div>
       <div className="flex gap-2">
         <div className=" w-2/3">

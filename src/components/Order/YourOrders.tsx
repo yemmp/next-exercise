@@ -1,12 +1,12 @@
 import React from "react";
-import { Button } from "./ui/button";
+import { Button } from "../ui/button";
 import {
   Card,
   CardHeader,
   CardTitle,
   CardContent,
   CardFooter,
-} from "./ui/card";
+} from "../ui/card";
 
 export default function YourOrders() {
   return (

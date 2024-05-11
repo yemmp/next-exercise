@@ -1,6 +1,6 @@
 import PageMark from "@/components/PageMark";
 
-export default function Analitycs() {
+export default function AnalitycsPage() {
   return (
     <main className="">
       <div>

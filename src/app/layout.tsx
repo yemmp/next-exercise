@@ -35,7 +35,9 @@ export default function RootLayout({
             <Sidemenu />
           </div>
           {/*Page-content*/}
-          <div className="overflow-auto mx-2 w-full">{children}</div>
+          <div className="overflow-auto no-scrollbar mx-2 w-full">
+            {children}
+          </div>
         </main>
       </body>
     </html>
